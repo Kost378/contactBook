@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class = "page-header">
+    <div class="search-block">
+      <input type="search" placeholder="Search" class="searchInput">
+      <button id = "searchBtn">Search</button>
+    </div>
+    <div class="sort">
+      <span>Sort </span>
+      <select class="selectSort">
+        <option value="default">Default</option>
+        <option value="increase">By name A-Z</option>
+        <option value="decrease">By name Z-A</option>
+
+      </select>
+    </div>
+ 
+  </header>
+  <main>
+    <div class="wrapper"> 
+     
+    </div>
+  </main>
+  <template>
+    <div class="card">
+      <h2 class= "name"> </h2>
+      <hr>
+      <span class="tel"> </span><br>
+      <span class="email"> </span>
+    </div>
+  </template>
+    <div class="popup-bacground" id="popup-bacground">
+      <div class="popup" id="popup">
+          <div>
+            <h2 class = "name"></h2>
+          </div>
+          <div><span>Phone: </span><span class="tel" editable> </span></div>
+          <div><span>E-mail: </span><span class="email"> </span></div>
+          
+          <div><span>Country: </span><span class="country"></span></div>
+          <div><span>City: </span><span class="city"></span></div>
+          <span class="id"></span>
+          <div class="buttons">
+            <button class = "edit">Edit</button>
+            <button class = "save">Save</button>
+          </div>
+          
+      </div>
+    </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

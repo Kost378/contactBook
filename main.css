@@ -1,0 +1,130 @@
+
+*, ::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  color: aliceblue;
+  background-color: #555555;
+}
+
+.page-header{
+  border-radius: 0 0 6px 6px;
+  border: 2px solid  rgb(13, 87, 156); /*rgb(10, 131, 245);*/
+  border-top: none;
+  background-color: #e5e5e5;
+  box-shadow: 0 0 10px 2px rgb(75, 83, 121);
+  margin: 0 auto;
+  max-width: 900px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.selectSort{
+  width: 215px;
+}
+.searchInput{
+  width: 175px;
+
+}
+
+
+
+main{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+select, input, #searchBtn{
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+#searchBtn{
+  background-color: rgb(10, 131, 245);
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -1.65%;
+}
+
+.card{
+  width: 30%;
+  background-color: #e5e5e5;
+  border-radius: 6px;
+  border: 2px solid rgb(13, 87, 156);
+  margin: 1.65%;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px rgb(75, 83, 121);
+
+}
+
+.popup-bacground{
+	display: none;/*flex*/
+	position: fixed;
+  top: 0;
+  left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .8);
+
+	z-index: 24652;
+	justify-content: center;
+  align-items: center;
+}
+.popup{
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  border-radius: 20px;
+	background-color: #e5e5e5;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  flex-direction: column;
+}
+.popup button{
+  margin-top: 20px;
+  width: 60px;
+}
+.popup div{
+  margin-top:10px;
+}
+
+@media screen and (max-width: 800px){
+  .card{
+    width: 46%;
+    margin: 2%;
+  }
+  .wrapper{
+    margin: 0 -2%;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .card{
+    width: 100%;
+  }
+  main{
+    max-width: 300px;
+  }
+  .page-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selectSort{
+    margin-top: 12px;
+  }
+}
